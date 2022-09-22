@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jeu du Mastermind++</title>
+  <meta name="description" content="Jeu du mastermind amélioré en html, css et javascript">
+  <meta name="author" content="Jacques Granarolo">
+  <link rel="icon" type="image/png" href="../image/small/ico_small_white.png" />
+  <link rel="stylesheet" href="../css/game_computer.css?v=1.0">
+  <script language="JavaScript" type="text/javascript"  src='../javascript/lib/DragDropTouch.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/controller/functions.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/model/constant.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/model/ClassColor.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/model/ClassCombi.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/model/modelGame.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/view/viewGame.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/controller/controllerGame.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/model/modelStatistic.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/controller/controllerStatistic.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/controller/game.js'></script>
+</head>
+
+<body onload="initGame()">
+  <div id="bloc_principal">
+    <div id="bloc_titre">
+      <h1>Jeu du <span class="text_orange">Mastermind</span>++</h1>
+    </div>
+    <div id="bloc_container">
+      <p id="text_turn_number">Tour n° <span id="turn_number">0</span></p>
+      <p class="text_1">Choisissez une combinaison par glisser-déposer</p>
+      <div id="bloc_combi_to_play">
+        <span class="case" id="case_1" ondrop="drop(event, 1)" ondragover="ControllerGame.allowDrop(event)">
+          <img class="icon_grey" src="../image/white/ico_wb_grey.png">
+        </span>
+        <span class="case" id="case_2" ondrop="drop(event, 2)" ondragover="ControllerGame.allowDrop(event)">
+          <img class="icon_grey" src="../image/white/ico_wb_grey.png">
+        </span>
+        <span class="case" id="case_3" ondrop="drop(event, 3)" ondragover="ControllerGame.allowDrop(event)">
+          <img class="icon_grey" src="../image/white/ico_wb_grey.png">
+        </span>
+        <span class="case" id="case_4" ondrop="drop(event, 4)" ondragover="ControllerGame.allowDrop(event)">
+          <img class="icon_grey" src="../image/white/ico_wb_grey.png">
+        </span>
+      </div>
+      <div id="bloc_colors_to_pick" ondrop="dropReturn(event)" ondragover="ControllerGame.allowDrop(event)">
+        <img id="icon_red" class="icon_to_pick" src="../image/white/ico_wb_red.png" draggable="true" ondragstart="ControllerGame.drag(event)">
+        <img id="icon_yellow" class="icon_to_pick" src="../image/white/ico_wb_yellow.png" draggable="true" ondragstart="ControllerGame.drag(event)">
+        <img id="icon_blue" class="icon_to_pick" src="../image/white/ico_wb_blue.png" draggable="true" ondragstart="ControllerGame.drag(event)">
+        <img id="icon_green" class="icon_to_pick" src="../image/white/ico_wb_green.png" draggable="true" ondragstart="ControllerGame.drag(event)">
+        <img id="icon_white" class="icon_to_pick" src="../image/white/ico_wb_white.png" draggable="true" ondragstart="ControllerGame.drag(event)">
+        <img id="icon_purple" class="icon_to_pick" src="../image/white/ico_wb_purple.png" draggable="true" ondragstart="ControllerGame.drag(event)">
+        <img id="icon_orange" class="icon_to_pick" src="../image/white/ico_wb_orange.png" draggable="true" ondragstart="ControllerGame.drag(event)">
+        <img id="icon_fuchsia" class="icon_to_pick" src="../image/white/ico_wb_fuchsia.png" draggable="true" ondragstart="ControllerGame.drag(event)">
+      </div>
+      <input id="button_send" class ="hover_off" type="button" value="Tester la Combinaison" onclick="sendCombi()" disabled>
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

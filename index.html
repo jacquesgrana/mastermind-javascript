@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jeu du Mastermind++</title>
+  <meta name="description" content="Jeu du mastermind amélioré en html, css et javascript">
+  <meta name="author" content="Jacques Granarolo">
+  <link rel="icon" type="image/png" href="image/small/ico_small_white.png" />
+  <link rel="stylesheet" href="css/homepage_computer.css?v=1.0">
+  <script language="JavaScript" type="text/javascript"  src="javascript/controller/homepage.js"></script>
+  <script language="JavaScript" type="text/javascript"  src="javascript/controller/controllerHomepage.js"></script>
+  <script language="JavaScript" type="text/javascript"  src="javascript/model/modelHomepage.js"></script>
+  <script language="JavaScript" type="text/javascript"  src="javascript/view/viewHomepage.js"></script>
+</head>
+
+<body onload="initPage()">
+  <div id="bloc_principal">
+    <div id="bloc_titre">
+      <h1>Jeu du <span class="texte_orange">Mastermind</span>++</h1>
+    </div>
+
+    <div id="bloc_regles">
+        <h3 class="titre_regles">Règles du Jeu :</h3>
+        <p id="texte">Vous de devez trouver, en 12 tours maximum, une combinaison de 4 couleurs parmi 8 : Rouge, Jaune, Bleu, Vert, Blanc, Violet, Orange ou Fuchsia.</p>
+        <img class="ico_regles" src="image/white/ico_wb_red.png">
+        <img class="ico_regles" src="image/white/ico_wb_yellow.png">
+        <img class="ico_regles" src="image/white/ico_wb_blue.png">
+        <img class="ico_regles" src="image/white/ico_wb_green.png">
+        <img class="ico_regles" src="image/white/ico_wb_white.png">
+        <img class="ico_regles" src="image/white/ico_wb_purple.png">
+        <img class="ico_regles" src="image/white/ico_wb_orange.png">
+        <img class="ico_regles" src="image/white/ico_wb_fuchsia.png">
+       <p class="texte1">Après chaque tour, on vous indiquera :</p>
+        <p class="texte_resultat"><img class="ico_result_regles" src="image/very_small/ico_vs_black.png">Pour chaque couleur bien placée,</p>
+        <p class="texte_resultat"><img class="ico_result_regles" src="image/very_small/ico_vs_white.png">Pour chaque couleur présente mais mal placée.</p>
+        <p class="texte2">Durant la partie, vous aurez accès à des statistiques et des probabilités qui s'affineront à chaque tour.</p>
+    </div>
+    <input id="bouton_jouer" type="button" value="JOUER" onclick="ControllerHomepage.lancementJeu()">
+
+  </div>
+</body>
+</html>

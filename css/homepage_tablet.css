@@ -1,0 +1,113 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {background-color: #101010; text-align: center}
+
+h1, h3, p {
+margin-top: 40px;
+color: white;
+font-family:"goBold", arial, sans-serif;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 39px;
+ }
+
+ h3 {
+   margin-top: 0px;
+   font-size: 32px;
+   color: orange;
+   margin-bottom: 20px;
+ }
+
+ p {
+   margin-top: 30px;
+   font-size: 18px;
+ }
+
+ .texte_orange {
+   color: orange;
+ }
+
+ .texte_resultat{
+   margin-top: 0px;
+ }
+
+ .texte1{
+   margin-top: 40px;
+   margin-bottom: 20px;
+   color: orange;
+   font-size: 24px;
+ }
+
+ .texte2{
+   margin-top: 40px;
+   margin-bottom: 0px;
+   color: orange;
+   font-size: 20px;
+ }
+
+ #texte {
+   margin-bottom: 30px;
+ }
+
+ #bloc_titre {
+   margin-top: 80px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ #bloc_regles {
+   background-color: #404040;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 40px;
+   width: 600px;
+   padding: 60px;
+   padding-bottom: 40px;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius:10px;
+   border: 2px solid #FFFFFF;
+ }
+
+ #bouton_jouer {
+   margin-top: 40px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 40px;
+   width: 520px;
+   height: 110px;
+   background-color: #101010;
+   font-family: "goBold", arial, sans-serif;
+   color: orange;
+   font-size: 36px;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius:10px;
+   border: 1px solid #FFFFFF;
+ }
+
+ .ico_regles {
+   margin-top: 10px;
+   margin-left: 5px;
+   margin-right: 5px;
+   width: 40px;
+   height: 40px;
+ }
+
+ .ico_result_regles {
+   margin-top: 20px;
+   margin-left: 10px;
+   margin-right: 10px;
+   width: 15px;
+   height: 15px;
+ }

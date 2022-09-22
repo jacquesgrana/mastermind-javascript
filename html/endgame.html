@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jeu du Mastermind++</title>
+  <meta name="description" content="Jeu du mastermind amélioré en html, css et javascript">
+  <meta name="author" content="Jacques Granarolo">
+  <link rel="icon" type="image/png" href="../image/small/ico_small_white.png" />
+  <link rel="stylesheet" href="../css/endgame_computer.css?v=1.0">
+  <script language="JavaScript" type="text/javascript"  src='../javascript/controller/functions.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/model/constant.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/model/ClassColor.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/model/ClassCombi.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/model/modelEndgame.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/view/viewEndgame.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/controller/controllerEndgame.js'></script>
+  <script language="JavaScript" type="text/javascript"  src='../javascript/controller/endgame.js'></script>
+</head>
+
+<body onload="initEndGame()">
+
+  <div id="bloc_principal">
+    <div id="bloc_titre">
+      <h1>Jeu du <span class="text_orange">Mastermind</span>++</h1>
+    </div>
+    <div id="bloc_container">
+      <p id="text_game_won">Vous avez <span id="result_game_won">XX</span> en <span id="turn_number">XX</span> tours !</p>
+      <p class="text_1">Combinaison à trouver :</p>
+      <div id="bloc_combi_to_play">
+        <span class="case" id="case_1">
+          <img class="icon_grey" src="../image/white/ico_wb_grey.png">
+        </span>
+        <span class="case" id="case_2">
+          <img class="icon_grey" src="../image/white/ico_wb_grey.png">
+        </span>
+        <span class="case" id="case_3">
+          <img class="icon_grey" src="../image/white/ico_wb_grey.png">
+        </span>
+        <span class="case" id="case_4">
+          <img class="icon_grey" src="../image/white/ico_wb_grey.png">
+        </span>
+      </div>
+      <p class="text_1">Historique de la partie :</p>
+      <div id="bloc_combi_played">
+
+      </div>
+      <input id="button_return_game" type="button" value="Rejouer" onclick="returnToGame()">
+    </div>
+  </div>
+</body>
+</html>
